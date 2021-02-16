@@ -19,7 +19,7 @@ function Row( { title, url } ) {
 	console.table(movies)
 
 	return (
-		<section>
+		<section className="container">
 			<h2>{ title }</h2>
 			<div className="meovies-list">
 				{

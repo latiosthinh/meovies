@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root {
+	background: #000000;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+	transition-duration: .5s;
+}
+
+h2 {
+	margin-bottom: 40px;
+	color: #ffffff;
+}
+
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media all and (max-width:991px) {
+		width: 600px;
+	}
+}
+
+.meovies {
+	&-list {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+	}
+
+	&-item {
+		cursor: pointer;
+		overflow: hidden;
+
+		&:hover {
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+}

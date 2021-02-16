@@ -7,7 +7,6 @@ function Item( { props } ) {
 	return (
 		<div className="meovies-item">
 			<img src={ imgSrc } alt={ props.title } />
-			<h3>{ props.title }</h3>
 		</div>
 	)
 }
